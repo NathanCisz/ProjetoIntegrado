@@ -8,7 +8,7 @@
     android:background="#D9D9D9">
 
     <View
-        android:id="@+id/view1"
+        android:id="@+id/topoAzulMenu"
         android:layout_width="415dp"
         android:layout_height="298dp"
         android:layout_marginBottom="433dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/criarTarefa"
         android:layout_width="315dp"
         android:layout_height="53dp"
         android:layout_marginBottom="16dp"
@@ -27,25 +27,25 @@
         android:text="Criar nova tarefa"
         android:textSize="20sp"
         app:cornerRadius="9dp"
-        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintBottom_toTopOf="@+id/mostrarMesesMenu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="@+id/topoAzulMenu"
         app:layout_constraintVertical_bias="1.0" />
 
     <View
-        android:id="@+id/view2"
+        android:id="@+id/mostrarMesesMenu"
         android:layout_width="315dp"
         android:layout_height="53dp"
         android:layout_marginTop="245dp"
         android:background="@drawable/definir_mes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view1" />
+        app:layout_constraintTop_toTopOf="@+id/topoAzulMenu" />
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/voltarMes"
         android:layout_width="100dp"
         android:layout_height="53dp"
         android:backgroundTint="#006494"
@@ -53,15 +53,15 @@
         android:textColor="#000000"
         android:textSize="25sp"
         app:cornerRadius="9dp"
-        app:layout_constraintBottom_toBottomOf="@+id/view2"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintBottom_toBottomOf="@+id/mostrarMesesMenu"
+        app:layout_constraintEnd_toEndOf="@+id/mostrarMesesMenu"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/mostrarMesesMenu"
+        app:layout_constraintTop_toTopOf="@+id/mostrarMesesMenu"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/passarMes"
         android:layout_width="95dp"
         android:layout_height="53dp"
         android:backgroundTint="#006494"
@@ -69,11 +69,11 @@
         android:textColor="#000000"
         android:textSize="25sp"
         app:cornerRadius="9dp"
-        app:layout_constraintBottom_toBottomOf="@+id/view2"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintBottom_toBottomOf="@+id/mostrarMesesMenu"
+        app:layout_constraintEnd_toEndOf="@+id/mostrarMesesMenu"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/mostrarMesesMenu"
+        app:layout_constraintTop_toTopOf="@+id/mostrarMesesMenu"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
