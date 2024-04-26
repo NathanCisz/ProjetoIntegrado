@@ -76,4 +76,39 @@
         app:layout_constraintTop_toTopOf="@+id/mostrarMesesMenu"
         app:layout_constraintVertical_bias="0.0" />
 
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="315dp"
+        android:layout_height="274dp"
+        android:background="@drawable/arredondar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topoAzulMenu"
+        app:layout_constraintVertical_bias="0.115">
+
+        <CalendarView
+            android:id="@+id/calendarView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="32dp"
+        android:layout_height="385dp"
+        android:layout_marginEnd="1dp"
+        android:contentDescription="Rolar a página"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout"
+        tools:layout_editor_absoluteY="254dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
