@@ -17,14 +17,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/TarefasAndamento"
-        android:layout_width="315dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="245dp"
-        android:background="@drawable/tarefas_andamento"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/topoAzulMenu" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
