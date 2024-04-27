@@ -19,6 +19,38 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/ListaClientes"
+        android:layout_width="155dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E76969"
+        android:text="Ir para lista de clientes"
+        android:textSize="20sp"
+        app:cornerRadius="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/criarTarefa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toEndOf="@+id/ListaServicos"
+        app:layout_constraintTop_toTopOf="@+id/topoAzulMenu"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/ListaServicos"
+        android:layout_width="155dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E76969"
+        android:text="Ir para lista de serviços"
+        android:textSize="20sp"
+        app:cornerRadius="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/criarTarefa"
+        app:layout_constraintEnd_toStartOf="@+id/ListaClientes"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topoAzulMenu"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
         android:id="@+id/criarTarefa"
         android:layout_width="315dp"
         android:layout_height="53dp"
