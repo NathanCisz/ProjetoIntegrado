@@ -8,9 +8,9 @@
 
     <View
         android:id="@+id/topoAzulMenu"
-        android:layout_width="415dp"
-        android:layout_height="298dp"
-        android:layout_marginBottom="433dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="298dp"
         android:background="#13293D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,14 +8,16 @@
 
     <View
         android:id="@+id/topoAzulMenu"
-        android:layout_width="415dp"
+        android:layout_width="match_parent"
         android:layout_height="298dp"
         android:layout_marginBottom="433dp"
         android:background="#13293D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
 
     <Button
         android:id="@+id/ListaClientes"
@@ -24,7 +25,7 @@
         android:layout_height="77dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#E76969"
-        android:text="Ir para lista de clientes"
+        android:text="@string/ir_para_lista_de_clientes"
         android:textSize="20sp"
         app:cornerRadius="9dp"
         app:layout_constraintBottom_toTopOf="@+id/criarTarefa"
@@ -40,7 +41,7 @@
         android:layout_height="77dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#E76969"
-        android:text="Ir para lista de serviços"
+        android:text="@string/ir_para_lista_de_servi_os"
         android:textSize="20sp"
         app:cornerRadius="9dp"
         app:layout_constraintBottom_toTopOf="@+id/criarTarefa"
@@ -56,7 +57,7 @@
         android:layout_height="53dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#E76969"
-        android:text="Criar nova tarefa"
+        android:text="@string/criar_nova_tarefa"
         android:textSize="20sp"
         app:cornerRadius="9dp"
         app:layout_constraintBottom_toTopOf="@+id/mostrarMesesMenu"
@@ -81,7 +82,7 @@
         android:layout_width="100dp"
         android:layout_height="53dp"
         android:backgroundTint="#006494"
-        android:text="\u003C"
+        android:text="@string/u003c"
         android:textColor="#000000"
         android:textSize="25sp"
         app:cornerRadius="9dp"
@@ -97,7 +98,7 @@
         android:layout_width="95dp"
         android:layout_height="53dp"
         android:backgroundTint="#006494"
-        android:text="\u003E"
+        android:text="@string/u003e"
         android:textColor="#000000"
         android:textSize="25sp"
         app:cornerRadius="9dp"
@@ -126,21 +127,5 @@
             android:layout_height="match_parent" />
 
     </FrameLayout>
-
-    <ScrollView
-        android:layout_width="32dp"
-        android:layout_height="385dp"
-        android:layout_marginEnd="1dp"
-        android:contentDescription="Rolar a página"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/frameLayout"
-        tools:layout_editor_absoluteY="254dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

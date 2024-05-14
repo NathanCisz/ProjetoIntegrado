@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Projeto Integrado 2</string>
     <string name="se"><![CDATA[<]]></string>
+    <string name="ir_para_lista_de_clientes">Ir para lista de clientes</string>
+    <string name="ir_para_lista_de_servi_os">Ir para lista de serviços</string>
+    <string name="criar_nova_tarefa">Criar nova tarefa</string>
+    <string name="u003c"><![CDATA[<]]></string>
+    <string name="u003e"><![CDATA[>]]></string>
+    <string name="rolar_a_p_gina">Rolar a página</string>
 </resources>
