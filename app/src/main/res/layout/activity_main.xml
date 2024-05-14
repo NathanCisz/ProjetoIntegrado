@@ -1,131 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#D9D9D9">
 
-    <View
-        android:id="@+id/topoAzulMenu"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="298dp"
-        android:layout_marginBottom="433dp"
-        android:background="#13293D"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.494" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/ListaClientes"
-        android:layout_width="155dp"
-        android:layout_height="77dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#E76969"
-        android:text="@string/ir_para_lista_de_clientes"
-        android:textSize="20sp"
-        app:cornerRadius="9dp"
-        app:layout_constraintBottom_toTopOf="@+id/criarTarefa"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.816"
-        app:layout_constraintStart_toEndOf="@+id/ListaServicos"
-        app:layout_constraintTop_toTopOf="@+id/topoAzulMenu"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/ListaServicos"
-        android:layout_width="155dp"
-        android:layout_height="77dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#E76969"
-        android:text="@string/ir_para_lista_de_servi_os"
-        android:textSize="20sp"
-        app:cornerRadius="9dp"
-        app:layout_constraintBottom_toTopOf="@+id/criarTarefa"
-        app:layout_constraintEnd_toStartOf="@+id/ListaClientes"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/topoAzulMenu"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/criarTarefa"
-        android:layout_width="315dp"
-        android:layout_height="53dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#E76969"
-        android:text="@string/criar_nova_tarefa"
-        android:textSize="20sp"
-        app:cornerRadius="9dp"
-        app:layout_constraintBottom_toTopOf="@+id/mostrarMesesMenu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/topoAzulMenu"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <View
-        android:id="@+id/mostrarMesesMenu"
-        android:layout_width="315dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="245dp"
-        android:background="@drawable/definir_mes"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/topoAzulMenu" />
-
-
-    <Button
-        android:id="@+id/voltarMes"
-        android:layout_width="100dp"
-        android:layout_height="53dp"
-        android:backgroundTint="#006494"
-        android:text="@string/u003c"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        app:cornerRadius="9dp"
-        app:layout_constraintBottom_toBottomOf="@+id/mostrarMesesMenu"
-        app:layout_constraintEnd_toEndOf="@+id/mostrarMesesMenu"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/mostrarMesesMenu"
-        app:layout_constraintTop_toTopOf="@+id/mostrarMesesMenu"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/passarMes"
-        android:layout_width="95dp"
-        android:layout_height="53dp"
-        android:backgroundTint="#006494"
-        android:text="@string/u003e"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        app:cornerRadius="9dp"
-        app:layout_constraintBottom_toBottomOf="@+id/mostrarMesesMenu"
-        app:layout_constraintEnd_toEndOf="@+id/mostrarMesesMenu"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/mostrarMesesMenu"
-        app:layout_constraintTop_toTopOf="@+id/mostrarMesesMenu"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="315dp"
-        android:layout_height="274dp"
-        android:background="@drawable/arredondar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topoAzulMenu"
-        app:layout_constraintVertical_bias="0.115">
-
-        <CalendarView
-            android:id="@+id/calendarView5"
+        <View
+            android:id="@+id/topoAzulMenu"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="298dp"
+            android:background="#13293D"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
-    </FrameLayout>
+        <View
+            android:id="@+id/mostrarMesesMenu"
+            android:layout_width="315dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="240dp"
+            android:background="@drawable/definir_mes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/topoAzulMenu" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/voltarMes"
+            android:layout_width="100dp"
+            android:layout_height="53dp"
+            android:backgroundTint="#006494"
+            android:text="@string/u003c"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:cornerRadius="9dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mostrarMesesMenu"
+            app:layout_constraintEnd_toEndOf="@+id/mostrarMesesMenu"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/mostrarMesesMenu"
+            app:layout_constraintTop_toTopOf="@+id/mostrarMesesMenu"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/criarTarefa"
+            android:layout_width="315dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#E76969"
+            android:text="@string/criar_nova_tarefa"
+            android:textSize="20sp"
+            app:cornerRadius="9dp"
+            app:layout_constraintBottom_toTopOf="@+id/mostrarMesesMenu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/topoAzulMenu"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/passarMes"
+            android:layout_width="95dp"
+            android:layout_height="53dp"
+            android:backgroundTint="#006494"
+            android:text="@string/u003e"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:cornerRadius="9dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mostrarMesesMenu"
+            app:layout_constraintEnd_toEndOf="@+id/mostrarMesesMenu"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/mostrarMesesMenu"
+            app:layout_constraintTop_toTopOf="@+id/mostrarMesesMenu"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="315sp"
+            android:layout_height="298dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="375dp"
+            android:layout_marginEnd="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <CalendarView
+                android:id="@+id/calendarView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
