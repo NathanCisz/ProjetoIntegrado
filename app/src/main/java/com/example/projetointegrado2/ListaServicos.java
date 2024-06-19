@@ -1,7 +1,6 @@
 package com.example.projetointegrado2;
 
 import android.os.Bundle;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
