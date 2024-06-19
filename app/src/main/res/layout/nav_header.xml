@@ -7,26 +7,26 @@
     android:gravity="bottom"
     android:padding="16dp"
     android:background="@drawable/headerbkg"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:fontFamily="@font/inter">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/aklogo"
-        android:contentDescription="@string/logo" />
+        android:layout_width="107dp"
+        android:layout_height="104dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/mao_celular" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/android_knowledge"
-        android:textColor="#0D47A1"
-        android:textStyle="bold" />
+        android:text="@string/agenda_servicos"
+        android:textColor="@color/white"
+        android:fontFamily="@font/inter" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="@string/contact_androidknowledge_com"
         android:textColor="#263238"
         android:textSize="14sp" />
 

@@ -10,33 +10,25 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/nav_home"
-            android:title="@string/home"/>
+            android:title="@string/home"
+            android:fontFamily="@font/inter"/>
 
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/nav_settings"
-            android:title="@string/settings"/>
+            android:title="@string/servicos"
+            android:fontFamily="@font/inter"/>
 
         <item
             android:id="@+id/nav_share"
             android:icon="@drawable/nav_share"
-            android:title="@string/share"/>
+            android:title="@string/clientes"
+            android:fontFamily="@font/inter"/>
 
         <item
             android:id="@+id/nav_about"
             android:icon="@drawable/nav_about"
-            android:title="@string/about_us"/>
+            android:title="@string/tarefas_semana"
+            android:fontFamily="@font/inter"/>
     </group>
-    <item
-        android:title="">
-
-        <menu>
-            <item
-                android:id="@+id/nav_logout"
-                android:icon="@drawable/nav_logout"
-                android:title="@string/logout"/>
-        </menu>
-
-    </item>
-
 </menu>

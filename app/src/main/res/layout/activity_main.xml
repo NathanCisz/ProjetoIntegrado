@@ -41,31 +41,17 @@
             app:layout_constraintTop_toTopOf="@+id/topoAzulMenu" />
 
         <Button
-            android:id="@+id/voltarMes"
-            android:layout_width="100dp"
-            android:layout_height="53dp"
-            android:backgroundTint="#006494"
-            android:text="@string/u003c"
-            android:textColor="#000000"
-            android:textSize="25sp"
-            app:cornerRadius="9dp"
-            app:layout_constraintBottom_toBottomOf="@+id/mostrarMesesMenu"
-            app:layout_constraintEnd_toEndOf="@+id/mostrarMesesMenu"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/mostrarMesesMenu"
-            app:layout_constraintTop_toTopOf="@+id/mostrarMesesMenu"
-            app:layout_constraintVertical_bias="1.0"
-            tools:ignore="TextContrastCheck" />
-
-        <Button
             android:id="@+id/criarTarefa"
             android:layout_width="315dp"
             android:layout_height="53dp"
             android:layout_marginBottom="16dp"
             android:backgroundTint="#E76969"
+            android:fontFamily="@font/inter"
+            android:radius="9dp"
             android:text="@string/criar_nova_tarefa"
+            android:textColor="@color/white"
             android:textSize="20sp"
-            app:cornerRadius="9dp"
+            app:cornerRadius="18dp"
             app:layout_constraintBottom_toTopOf="@+id/mostrarMesesMenu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -78,12 +64,29 @@
             android:layout_height="53dp"
             android:backgroundTint="#006494"
             android:text="@string/u003e"
-            android:textColor="#000000"
+            android:textColor="@color/white"
             android:textSize="25sp"
             app:cornerRadius="9dp"
             app:layout_constraintBottom_toBottomOf="@+id/mostrarMesesMenu"
             app:layout_constraintEnd_toEndOf="@+id/mostrarMesesMenu"
             app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/mostrarMesesMenu"
+            app:layout_constraintTop_toTopOf="@+id/mostrarMesesMenu"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/voltarMes"
+            android:layout_width="100dp"
+            android:layout_height="53dp"
+            android:backgroundTint="#006494"
+            android:text="@string/u003c"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:cornerRadius="9dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mostrarMesesMenu"
+            app:layout_constraintEnd_toEndOf="@+id/mostrarMesesMenu"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/mostrarMesesMenu"
             app:layout_constraintTop_toTopOf="@+id/mostrarMesesMenu"
             app:layout_constraintVertical_bias="1.0"
@@ -118,8 +121,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
-        app:itemIconTint="@color/lavender"
-        app:itemTextColor="@color/lavender"
+        app:itemIconTint="#13293D"
+        app:itemTextColor="#13293D"
         app:menu="@menu/nav_menu" />
 
     <LinearLayout
@@ -132,7 +135,7 @@
         android:layout_height="56dp"
         android:id="@+id/toolbar"
         android:elevation="4dp"
-        android:background="@color/lavender"
+        android:background="#13293D"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 

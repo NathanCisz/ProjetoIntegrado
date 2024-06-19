@@ -12,7 +12,6 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import android.view.MenuItem;
-
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawerLayout;
     @Override
@@ -59,7 +58,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             else if (id == R.id.nav_about) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).commit();
         }
-
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
