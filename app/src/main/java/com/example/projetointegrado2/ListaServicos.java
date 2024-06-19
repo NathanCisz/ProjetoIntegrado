@@ -10,7 +10,7 @@ public class ListaServicos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.lista_servicos);
+        setContentView(R.layout.fragment_share);
 
     }
-}
+}//aa
