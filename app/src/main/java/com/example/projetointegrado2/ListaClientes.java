@@ -10,7 +10,7 @@ public class ListaClientes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.lista_clientes);
+        setContentView(R.layout.fragment_settings);
 
     }
 }
