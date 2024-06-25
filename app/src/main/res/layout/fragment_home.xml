@@ -16,10 +16,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="315sp"
+            android:layout_height="300dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/arredondar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <View
             android:id="@+id/topoAzulMenu"
             android:layout_width="match_parent"
-            android:layout_height="298dp"
+            android:layout_height="160dp"
             android:background="#13293D"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -33,11 +47,11 @@
             android:id="@+id/mostrarMesesMenu"
             android:layout_width="315dp"
             android:layout_height="53dp"
-            android:layout_marginTop="240dp"
-            android:background="@drawable/definir_mes"
+            android:background="@drawable/tarefas_andamento"
+            app:layout_constraintBottom_toBottomOf="@id/topoAzulMenu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/topoAzulMenu" />
+            tools:layout_editor_absoluteY="213dp" />
 
         <Button
             android:id="@+id/criarTarefa"
@@ -49,67 +63,26 @@
             android:text="@string/criar_nova_tarefa"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:cornerRadius="18dp"
+            android:background="@drawable/arredondar2"
+            app:cornerRadius="50dp"
             app:layout_constraintBottom_toTopOf="@+id/mostrarMesesMenu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/topoAzulMenu"
             app:layout_constraintVertical_bias="1.0" />
 
-        <Button
-            android:id="@+id/passarMes"
-            android:layout_width="95dp"
-            android:layout_height="53dp"
-            android:backgroundTint="#006494"
-            android:text="@string/u003e"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            app:cornerRadius="9dp"
-            app:layout_constraintBottom_toBottomOf="@+id/mostrarMesesMenu"
-            app:layout_constraintEnd_toEndOf="@+id/mostrarMesesMenu"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/mostrarMesesMenu"
-            app:layout_constraintTop_toTopOf="@+id/mostrarMesesMenu"
-            app:layout_constraintVertical_bias="1.0"
-            tools:ignore="TextContrastCheck" />
-
-        <Button
-            android:id="@+id/voltarMes"
-            android:layout_width="100dp"
-            android:layout_height="53dp"
-            android:backgroundTint="#006494"
-            android:text="@string/u003c"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            app:cornerRadius="9dp"
-            app:layout_constraintBottom_toBottomOf="@+id/mostrarMesesMenu"
-            app:layout_constraintEnd_toEndOf="@+id/mostrarMesesMenu"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/mostrarMesesMenu"
-            app:layout_constraintTop_toTopOf="@+id/mostrarMesesMenu"
-            app:layout_constraintVertical_bias="1.0"
-            tools:ignore="TextContrastCheck" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="315sp"
-            android:layout_height="298dp"
-            android:layout_marginStart="48dp"
-            android:layout_marginTop="375dp"
-            android:layout_marginEnd="48dp"
+        <CalendarView
+            android:id="@+id/calendarView4"
+            android:layout_width="295dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="155dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="167dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <CalendarView
-                android:id="@+id/calendarView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -123,13 +96,14 @@
             android:layout_height="match_parent"
             android:id="@+id/fragment_container"/>
     </LinearLayout>
+
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/nav_view"
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu"
         app:itemIconTint="@color/lavender"
-        app:itemTextColor="@color/lavender"/>
+        app:itemTextColor="@color/lavender"
+        app:menu="@menu/nav_menu" />
 </androidx.drawerlayout.widget.DrawerLayout>
