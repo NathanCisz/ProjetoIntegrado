@@ -12,7 +12,6 @@
     tools:ignore="VisualLintBounds">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -54,25 +53,24 @@
             tools:layout_editor_absoluteY="213dp" />
 
         <Button
-            android:id="@+id/criarTarefa"
             android:layout_width="315dp"
             android:layout_height="53dp"
             android:layout_marginBottom="16dp"
+            android:background="@drawable/arredondar2"
             android:backgroundTint="#E76969"
             android:radius="9dp"
             android:text="@string/criar_nova_tarefa"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:background="@drawable/arredondar2"
             app:cornerRadius="50dp"
             app:layout_constraintBottom_toTopOf="@+id/mostrarMesesMenu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/topoAzulMenu"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
 
         <CalendarView
-            android:id="@+id/calendarView4"
             android:layout_width="295dp"
             android:layout_height="300dp"
             android:layout_marginStart="54dp"
@@ -84,17 +82,103 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="315dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="435dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/arredondar3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inter"
+                android:text="@string/jo_o_ribeiro"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:layout_width="123dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="179dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/arredondar2"
+                android:backgroundTint="#D9D9D9"
+                android:text="@string/conclu_do"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="122dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="165dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/_9_10"
+                android:textColor="#D9D9D9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="408dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/tarefas_de_junho"
+            android:textColor="#13293D"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="276dp"
+            android:layout_marginTop="409dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="83dp"
+            android:text="@string/_1_total"
+            android:textColor="#13293D"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <FrameLayout
+            android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/fragment_container"/>
+            android:layout_height="match_parent" />
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -102,6 +186,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:visibility="gone"
         app:headerLayout="@layout/nav_header"
         app:itemIconTint="@color/lavender"
         app:itemTextColor="@color/lavender"

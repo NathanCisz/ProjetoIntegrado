@@ -7,7 +7,6 @@
     tools:context=".ShareFragment">
 
     <ScrollView
-        android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
@@ -18,13 +17,11 @@
         tools:ignore="SpeakableTextPresentCheck"
         tools:layout_editor_absoluteY="36dp">
 
-        <androidx.constraintlayout.motion.widget.MotionLayout
-            android:id="@+id/scroll_layout"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layoutDescription="@xml/fragment_share_xml_scroll_layout_scene">
-
 
             <View
                 android:id="@+id/topoAzulMenu"
@@ -32,18 +29,37 @@
                 android:layout_height="160dp"
                 android:background="#13293D"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="298dp"
+                android:layout_height="108dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/lista_de_clientes"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <Button
-                android:id="@+id/excluir"
                 android:layout_width="120dp"
                 android:layout_height="53dp"
                 android:layout_marginStart="58dp"
@@ -58,7 +74,6 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <Button
-                android:id="@+id/adicionar"
                 android:layout_width="120dp"
                 android:layout_height="53dp"
                 android:layout_marginStart="243dp"
@@ -89,7 +104,6 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/DescricaoClienteUm"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="7dp"
@@ -101,7 +115,6 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/NomeCliente"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
@@ -137,7 +150,6 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/DescricaoClienteDois"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="7dp"
@@ -150,7 +162,6 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/NomeCliente2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
@@ -170,7 +181,6 @@
             </FrameLayout>
 
             <FrameLayout
-                android:id="@+id/TabelaCliente3"
                 android:layout_width="359dp"
                 android:layout_height="62dp"
                 android:layout_marginStart="27dp"
@@ -186,7 +196,6 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/DescricaoClienteTres"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="7dp"
@@ -198,7 +207,6 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/NomeCliente3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
@@ -216,6 +224,6 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </FrameLayout>
 
-        </androidx.constraintlayout.motion.widget.MotionLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
