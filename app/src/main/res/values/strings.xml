@@ -25,4 +25,18 @@
     <string name="settings_fragment">Settings Fragment</string>
     <string name="adicionar">Adicionar</string>
     <string name="excluir">Excluir</string>
+    <string name="jo_o_423">João - 423</string>
+    <string name="rodrigo_424">Rodrigo - 424</string>
+    <string name="cla_dio_425">Claúdio - 425</string>
+    <string name="jo_o_ribeiro_48_99612_4235">João Ribeiro - (48) 99612-4235</string>
+    <string name="rodrigo_oliveira_48_99875_4632">Rodrigo Oliveira - (48) 99875-4632</string>
+    <string name="cla_dio_vidal_48_99765_5748">Claúdio Vidal - (48) 99765-5748</string>
+    <string name="jo_o_ribeiro_id_423_endere_o_rua_das_neves">João Ribeiro - ID: 423 -- Endereço: Rua das Neves</string>
+    <string name="piso_vin_lico_os_4982">Piso Vinílico - OS: 4982</string>
+    <string name="rodrigo_oliveira_id_424_endere_o_rua_fim_do_mundo">Rodrigo Oliveira - ID: 424 -- Endereço: Rua Fim do Mundo</string>
+    <string name="piso_laminado_os_4985">Piso Laminado - OS: 4985</string>
+    <string name="cla_dio_vidal_id_425_endere_o_rua_teresina">Claúdio Vidal - ID: 425 -- Endereço: Rua Teresina</string>
+    <string name="piso_cer_mico_os_4999">Piso Cerâmico - OS: 4999</string>
+    <string name="lista_de_servi_os">Lista de Serviços</string>
+    <string name="lista_de_clientes">Lista de Clientes</string>
 </resources>
